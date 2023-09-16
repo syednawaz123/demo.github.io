@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sr University</title>
+    <style>
+.footer{
+margin-bottom:1px;
+}
+.menus{
+margin-top:1px;
+}
+ul {
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   overflow:hidden;
+   background-color:#333;
+}
+li {
+   float:left;
+}
+li a{
+   display:block;
+   color:white;
+   text-align:center;
+   padding:14px 16px;
+   text-decoration:none;
+}
+
+li.dropdown{
+   display:inline-block;
+}
+.dropdown-content{
+   display:none;
+   position:absolute;
+   background-color:#f9f9f9;
+   min-width:160px;
+   box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index:1;
+}
+.dropdown-content a{
+   color:black;
+   padding:12px 16px;
+   text-decoration:none;
+   display:block;
+   text-align:left;
+}
+.dropdown-content a:hover
+{background-color:red;}  
+.dropdown:hover .dropdown-content{
+   display:block;
+}
+
+li a:hover, .dropdown:hover .dropbtn,{
+background-color:red;
+}
+
+#labels,#inputs{
+font-size:15pt;
+width:250px;
+}
+table{
+margin:50px;
+}
+td, th{
+vertical-align:top;
+padding:15px;
+}
+#btn {
+color: white;
+background-color:blue;
+border-radius: 10px;
+height: 50px;
+width: 250px;
+font-size: 12pt;
+}
+		.flex-container {
+  display: flex;
+  justify-content: center; 
+ align-items: left;
+  background-color: white;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue; 
+  color: black;
+  width: 360px;
+  margin: 10px;
+  text-align: left;
+  line-height: 60px;
+  font-size: 23px;
+}
+.flex-container > div:nth-child(1) {
+  background-color: DodgerBlue;
+}
+
+.flex-container > div:nth-child(2) {
+  background-color: green;
+}
+
+.flex-container > div:nth-child(3) {
+  background-color: yellow; 
+}
+
+.flex-container > div:nth-child(4) {
+  background-color: Red; 
+}
+.student-info-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .student-image {
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+.red-text
+{
+color:red;
+}
+.green-text{
+color:green;
+}
+.blue-text
+{
+color:blue;
+}
+.orange-text
+{
+color:orange;
+}
+
+    </style>
+    <link rel="icon" href="../index_files/favicon.ico" type="image/x-icon" />
+</head>
+<div class="header">
+<img src="https://sraap.in/student/h1.png" width=100%>
+</div>
+ <ul>
+        <li class="dropdown">
+            <a class="drpbtn" href="interface_timetable.html">HOME</a>
+        </li>
+        <li class="dropdown">
+            <a class="drpbtn" href="#About">Academic Details</a>
+            <div class="dropdown-content">
+                <a href="#regulations">View academic registrations</a>
+                <a href="#calender">View academic calendar</a>
+                <a href="#syllabus">View syllabus</a>
+                <a href="#mastertt">View master timetable</a>
+                <a href="#holidays">List of holidays/list of working days</a>
+                <a href="#circulars">View circulars</a>
+            </div>
+        </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#Courses-Offered">Courses Registration</a>
+                    <div class="dropdown-content">
+                        <a href="#register">Register</a>
+                        <a href="#cs">View CS status</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#Attendance">Attendance</a>
+                    <div class="dropdown-content">
+                        <a href="#day">Day-wise Report</a>
+                        <a href="#month">Month-wise Report</a>
+                        <a href="#subject">Subject-wise Report</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="drpbtn" href="#fee">Fee Payment</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#internals">Internals</a>
+                    <div class="dropdown-content">
+                        <a href="#internalmrk">View internal marks(T&P)</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#feedback">Feedback</a>
+                    <div class="dropdown-content">
+                        <a href="#feedback">Submit Feedback</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#grievance">Grievance</a>
+                    <div class="dropdown-content">
+                        <a href="#submitgrievance">Submit Grievance</a>
+                        <a href="#status">Grievance status</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+    <a class="drpbtn" href="#password">Change Password</a>
+</li>
+</ul>
+<body>
+<h1 align="center" class="green-text">CHOOSE ON THE YOUR DESIRED SECTION NAME TO SEE ITS TIMETABLE</h1>
+<h2 align="center" class="red-text" fontstyle="Times New Roman"><b>TIMETABLE OF DIFFERENT SECTIONS-CSE</b></h2>
+<h2 class="orange-text">TimeTable For III-Sem.Click Below Section Name To Know More.</h2>
+<html>
+<style>
+table{
+width:50%;
+border-collapse:collapse;
+}
+th,td{
+border:1px solid;
+border-collapse:collapse;
+padding:8px;
+text-align:center;
+}
+th{
+background-color:#f2f2f2;
+border:collapse;
+}
+.red-text{
+color:red;
+}
+.blue-text{
+color:blue;
+}
+.green-text{
+color:green;
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<body>
+<center>
+<table>
+ <caption class="red-text">TIMETABLE FOR CSE-GENERAL</caption>
+<tr>
+<th>Year/Sem</th>
+<th>Section</th>
+<th>TT-Link</th>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-A</td>
+<td><a href="2CSE-A.html"> TT-CSE-A</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-B</td>
+<td><a href="time22.html"> TT-CSE-B</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-C</td>
+<td><a href="time3.html"> TT-CSE-C</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-D</td>
+<td><a href="time4.html"> TT-CSE-D</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-E</td>
+<td><a href="time5.html"> TT-CSE-E</a></td></tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-F</td>
+<td><a href="time6.html"> TT-CSE-F</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-G</td>
+<td><a href="time7.html"> TT-CSE-G</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-H</td>
+<td><a href="time8.html"> TT-CSE-H</a></td></tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-I</td>
+<td><a href="time9.html"> TT-CSE-I</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-J</td>
+<td><a href="time10.html"> TT-CSE-J</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-K</td>
+<td><a href="time11.html"> TT-CSE-K</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-L</td>
+<td><a href="time12.html"> TT-CSE-L</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-M</td>
+<td><a href="time13.html"> TT-CSE-M</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-N</td>
+<td><a href="time14.html"> TT-CSE-N</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-O</td>
+<td><a href="time15.html"> TT-CSE-O</a></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+<h2 align="center" class="blue-text" fontstyle="Times New Roman"><b>TIMETABLE OF DIFFERENT SECTIONS-CSE(AIML,DS&CS)</b></h2>
+<html>
+<style>
+table{
+width:50%;
+border-collapse:collapse;
+}
+th,td{
+border:1px solid;
+border-collapse:collapse;
+padding:8px;
+text-align:center;
+}
+th{
+background-color:#f2f2f2;
+border:collapse;
+}
+.red-text{
+color:red;
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<body>
+<center>
+<table>
+ <caption class="red-text">TIMETABLE FOR CSE-AIML AND DS&CS</caption>
+<tr>
+<th>Year/Sem</th>
+<th>Section</th>
+<th>TT-Link</th>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-A(AIML)</td>
+<td><a href="time16.html"> TT-CSE-A(AIML)</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-B(AIML)</td>
+<td><a href="time17.html"> TT-CSE-B(AIML)</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-C(AIML)</td>
+<td><a href="time18.html"> TT-CSE-C(AIML)</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-D(AIML)</td>
+<td><a href="time19.html"> TT-CSE-D(AIML)</a></td>
+</tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-E(AIML)</td>
+<td><a href="time20.html"> TT-CSE-E(AIML)</a></td></tr>
+<tr>
+<td>III-SEM(2ND YEAR)</td>
+<td>CSE-CD</td>
+<td><a href="time21.html"> TT-CSE-CD(DS&CS)</a></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+<h2> Want to go back to Home page?<br>Click Here⬇️</h2>
+<h2><a href="interface_timetable.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHome&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></h2>
+</body>
+</html>
